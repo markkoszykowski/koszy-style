@@ -1,0 +1,73 @@
+# https://clang.llvm.org/extra/clang-tidy/checks/list.html
+
+Checks: "-*,\
+  bugprone-argument-comment,\
+  bugprone-assert-side-effect,\
+  bugprone-bad-signal-to-kill-thread,\
+  bugprone-bitwise-pointer-cast,\
+  bugprone-bool-pointer-implicit-conversion,\
+  bugprone-branch-clone,\
+  bugprone-casting-through-void,\
+  bugprone-chained-comparison,\
+  bugprone-compare-pointer-to-member-virtual-function,\
+  bugprone-copy-constructor-init,\
+  bugprone-crtp-constructor-accessibility,\
+  bugprone-dangling-handle,\
+  bugprone-dynamic-static-initializers,\
+  bugprone-exception-escape,\
+  bugprone-fold-init-type,\
+  bugprone-forward-declaration-namespace,\
+  bugprone-forwarding-reference-overload,\
+  bugprone-implicit-widening-of-multiplication-result,\
+  bugprone-inaccurate-erase,\
+  bugprone-inc-dec-in-conditions,\
+  bugprone-incorrect-enable-if,\
+  bugprone-incorrect-roundings,\
+  bugprone-infinite-loop,\
+  bugprone-integer-division,\
+  bugprone-lambda-function-name,\
+  bugprone-macro-parentheses,\
+  bugprone-macro-repeated-side-effects,\
+  bugprone-misplaced-operator-in-strlen-in-alloc,\
+  bugprone-misplaced-pointer-arithmetic-in-alloc,\
+  bugprone-misplaced-widening-cast,\
+  bugprone-move-forwarding-reference,\
+  bugprone-multi-level-implicit-pointer-conversion,\
+  bugprone-multiple-new-in-one-expression,\
+  bugprone-multiple-statement-macro,\
+  bugprone-narrowing-conversions,\
+  bugprone-no-escape,\
+  bugprone-non-zero-enum-to-bool-conversion,\
+  bugprone-nondeterministic-pointer-iteration-order,\
+  bugprone-not-null-terminated-result,\
+  bugprone-optional-value-conversion,\
+  bugprone-parent-virtual-call,\
+  bugprone-pointer-arithmetic-on-polymorphic-object,\
+  bugprone-posix-return,\
+  bugprone-redundant-branch-condition,\
+  bugprone-reserved-identifier,\
+  bugprone-return-const-ref-from-parameter"
+
+CheckOptions:
+  bugprone-argument-comment.StrictMode: true
+  bugprone-argument-comment.IgnoreSingleArgument: false
+  bugprone-argument-comment.CommentBoolLiterals: true
+
+  bugprone-assert-side-effect.CheckFunctionCalls: true
+
+  bugprone-implicit-widening-of-multiplication-result.UseCXXStaticCastsInCppSources: true
+  bugprone-implicit-widening-of-multiplication-result.UseCXXHeadersInCppSources: true
+  bugprone-implicit-widening-of-multiplication-result.IgnoreConstantIntExpr: false
+
+  bugprone-lambda-function-name.IgnoreMacros: false
+
+  bugprone-misplaced-widening-cast.CheckImplicitCasts: true
+
+  bugprone-not-null-terminated-result.WantToUseSafeFunctions: false
+
+  bugprone-pointer-arithmetic-on-polymorphic-object.IgnoreInheritedVirtualFunctions: false
+
+  bugprone-reserved-identifier.Invert: false
+
+
+UseColor: true

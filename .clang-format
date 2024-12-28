@@ -51,7 +51,6 @@ BreakBeforeBraces: Attach
 BreakBeforeConceptDeclarations: Always
 BreakBeforeInlineASMColon: OnlyMultiline
 BreakBeforeTernaryOperators: false
-#BreakBinaryOperations: RespectPrecedence
 BreakConstructorInitializers: AfterColon
 BreakFunctionDefinitionParameters: false
 BreakInheritanceList: AfterColon
@@ -114,7 +113,6 @@ KeepEmptyLines:
   AtEndOfFile: false
   AtStartOfBlock: false
   AtStartOfFile: false
-#KeepFormFeed: false
 
 LambdaBodyIndentation: Signature
 
@@ -139,7 +137,6 @@ ReferenceAlignment: Left
 ReflowComments: true
 
 RemoveBracesLLVM: false
-#RemoveEmptyLinesInUnwrappedLines: true
 RemoveParentheses: Leave # ReturnStatement
 RemoveSemicolon: true
 
