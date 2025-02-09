@@ -21,7 +21,7 @@ def clang_format_verify() -> None:
 
 
 def all_clang_format_style_options() -> dict[str, Any]:
-	return yaml.safe_load(subprocess.run(["clang-format", "--style=llvm", "--dump-config"], capture_output=True).stdout)
+	return yaml.safe_load(subprocess.run(["clang-format", ALL_STYLE_OPTIONS, "--dump-config"], capture_output=True).stdout)
 
 
 def configured_clang_format_style_options() -> dict[str, Any]:
